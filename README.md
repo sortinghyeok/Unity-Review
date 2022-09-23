@@ -1,6 +1,10 @@
 # Unity-Review
 기본부터 다시 점검해보는 유니티 스터디
 
+## 2022 - 09 - 24
+
+- 포탄 충돌시 반경 Props Layer를 보유한 오브젝트에 데미지를 가하고, 만일 SetActive가 false처리 되지 않았다면(hp > 0) 날려보내는 로직 완성
+
 ## 2022 - 09 - 20
 
 - Amazing Balling 게임 대포 축 회전 및 State 전환 로직 작성
