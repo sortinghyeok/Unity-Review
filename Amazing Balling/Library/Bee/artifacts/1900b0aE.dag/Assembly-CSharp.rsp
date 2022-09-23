@@ -362,6 +362,7 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
 "Assets/EffectExamples/Misc Effects/Scripts/SpawnEffect.cs"
 "Assets/Scripts/Ball.cs"
+"Assets/Scripts/Prop.cs"
 "Assets/Scripts/ShooterRotator.cs"
 "Assets/Shared/Ramps/Runtime/RampAsset.cs"
 "Assets/Shared/Scripts/AdjustTimeScale.cs"
