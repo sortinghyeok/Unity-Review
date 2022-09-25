@@ -44,7 +44,6 @@ public class Ball : MonoBehaviour
 
         Destroy(explosionParticle.gameObject, explosionParticle.duration);
         Destroy(gameObject);
-        Debug.Log("트리거 종료");
 
     }
 
@@ -61,5 +60,10 @@ public class Ball : MonoBehaviour
 
         return damage;
 
+    }
+
+    private void OnDestroy()
+    {
+        GameManager.instance.OnBallDestroy();
     }
 }

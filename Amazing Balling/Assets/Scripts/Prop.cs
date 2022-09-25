@@ -17,9 +17,11 @@ public class Prop : MonoBehaviour
 
             AudioSource explosionAudio = instance.GetComponent<AudioSource>();
             explosionAudio.Play();
-            gameObject.SetActive(false);
+
+            GameManager.instance.AddScore(score);
+
             Destroy(instance.gameObject, instance.duration);
-          
+            gameObject.SetActive(false);
         }
     }
 

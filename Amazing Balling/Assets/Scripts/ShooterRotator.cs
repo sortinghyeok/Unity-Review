@@ -12,7 +12,7 @@ public class ShooterRotator : MonoBehaviour
     private RotateState state = RotateState.Idle;
     private float verticalRotateSpeed = 360f;
     private float horizontalRotateSpeed = 360f;
-
+    public BallShooter ballShooter;
     private void Update()
     {
         switch(state)
@@ -46,8 +46,20 @@ public class ShooterRotator : MonoBehaviour
                 {
                     state = RotateState.Ready;
                     Debug.Log("Ready");
+                    ballShooter.enabled = true;
                 }
                 break;
+
+            case RotateState.Ready:
+                break;
+
         }
+    }
+
+    private void OnEnable()
+    {
+        transform.rotation = Quaternion.identity;
+        state = RotateState.Idle;
+        ballShooter.enabled = false;
     }
 }
